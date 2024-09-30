@@ -1,4 +1,8 @@
-## 0.0.21-dev2
+## 0.0.21-dev3
+
+### Enhancements
+
+* **Astra DB V2 Source Connector** Create a v2 version of the Astra DB Source Connector.
 
 ### Fixes
 
