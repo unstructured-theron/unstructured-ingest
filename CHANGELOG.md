@@ -1,8 +1,16 @@
-## 0.0.21-dev3
+## 0.0.22-dev3
 
 ### Enhancements
 
+* **Add documentation for developing sources/destinations**
+
+* **Leverage `uv` for pip compile**
+
+* **Use incoming fsspec data to populate metadata** Rather than make additional calls to collect metadata after initial file list, use connector-specific data to populate the metadata. 
+
 * **Astra DB V2 Source Connector** Create a v2 version of the Astra DB Source Connector.
+
+## 0.0.21
 
 ### Fixes
 
@@ -10,7 +18,7 @@
 
 * **Update Databricks CI Test** Update to use client_id and client_secret auth. Also return files.upload method to one from open source.
 
-* **fix astra src bug**
+* **Fix astra src bug** V1 source connector was updated to work with astrapy 1.5.0
 
 ## 0.0.20
 
