@@ -182,16 +182,6 @@ class GitHubIndexer(Indexer):
                 if self.connection_config.branch is not None:
                     record_locator["branch"] = self.connection_config.branch
 
-                date_modified = datetime.strptime(
-                    element._headers["last-modified"],
-                    "%a, %d %b %Y %H:%M:%S %Z",
-                ).isoformat()
-
-                date_created = datetime.strptime(
-                    element._headers["date"],
-                    "%a, %d %b %Y %H:%M:%S %Z",
-                ).isoformat()
-
                 yield FileData(
                     identifier=element.sha,
                     connector_type=CONNECTOR_TYPE,
