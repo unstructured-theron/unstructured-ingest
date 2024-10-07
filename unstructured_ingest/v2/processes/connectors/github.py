@@ -203,9 +203,6 @@ class GitHubIndexer(Indexer):
                     metadata=FileDataSourceMetadata(
                         url=element.url,
                         version=element.etag,
-                        #date_modified=date_modified,
-                        #date_created=date_created,
-                        #date_processed=str(time()),
                         record_locator=record_locator
                     ),
                     additional_metadata={
